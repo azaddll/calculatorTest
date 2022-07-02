@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <button onclick="GetCalc()">Calculator</button>
+
+    
+
+    
+</head>
+<body>
+    
+</body>
+<script>
+
+    const GetCalc = () => {
+        const firstNumber = +prompt("Enter First Number");
+        const operation = prompt("Enter Operator");
+        const secondNumber = +prompt("Enter Second Number");
+
+        let result ;
+
+        if(operation == "+")
+        {
+            result = firstNumber + secondNumber;
+        }
+        else if(operation == "-")
+        {
+            result = firstNumber - secondNumber;
+        }
+        else if(operation == "*")
+        {
+            result = firstNumber * secondNumber;
+        }
+        else if(operation == "/")
+        {
+            result = firstNumber / secondNumber;
+        }
+
+        console.log("your Selected Operator is : " + operation);
+        console.log(`firstNumber is ${firstNumber} , secondNumber is ${secondNumber}`);
+        console.log(`result is ${result}`);
+    }   
+
+    
+
+</script>
+</html>
